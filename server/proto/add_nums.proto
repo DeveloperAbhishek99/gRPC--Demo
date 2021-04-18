@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+service AddNumbers {
+    rpc AddNum(Number) returns (Sum) {}
+}
+
+message Number {
+    int32 a=1;
+    int32 b=2;
+  }
+
+message Sum {
+    int32 c=1;
+}
